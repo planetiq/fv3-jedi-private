@@ -44,7 +44,7 @@ class ModelUFS: public ModelBase,
 
 /// Finish model integration
   void finalize(State &) const override;
-  int saveTrajectory(State &, const ModelBias &) const override;
+  int saveTrajectory(State &, const ModelBias &) const;
 
   const util::Duration & timeResolution() const override {return tstep_;}
   const oops::Variables & variables() const {return vars_;}
