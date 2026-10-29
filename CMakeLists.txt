@@ -145,9 +145,9 @@ if( FV3_FORECAST_MODEL MATCHES UFS )
   find_package(ESMF MODULE REQUIRED)
   #
   if( UFS_APP MATCHES "^(ATM)$" )
-    set( FV3JEDI_LIBRARIES fv3jedi
-                           ccpp_framework
-                           ccpp_physics )
+    set( FV3JEDI_LIBRARIES fv3jedi)
+        #ccpp_framework
+        #ccpp_physics )
   elseif( UFS_APP MATCHES "^(ATMAERO)$" )
     find_package (GFTL_SHARED REQUIRED)
     find_package (FARGPARSE REQUIRED)
